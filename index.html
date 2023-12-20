@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Library Project</title>
-  </head>
-  <body>
-    <main
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      "
-    >
-      <div>
-        <h1>Library Project</h1>
-        <div id="library">
-          <!-- Add table here -->
-          <table id="table" style="min-width: 680px; margin: 2rem">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Read</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
-                  <input
-                    type="checkbox"
-                    name="read"
-                    id="readLibraryCheckbox"
-                    checked
-                    disabled
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Project</title>
+</head>
+<body>
+  <main
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    "
+  >
+    <div>
+      <h1>Library Project</h1>
+      <div id="library">
+        <button id="addBook">Add Book</button>
+        <!-- Add input fields for user input -->
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" placeholder="Enter title">
 
-    <script src="app.js"></script>
-  </body>
+        <label for="authorInput">Author:</label>
+        <input type="text" id="authorInput" placeholder="Enter author">
+
+        <label for="readInput">Read:</label>
+        <input type="checkbox" id="readInput">
+
+        <button id="submitButton">Submit</button>
+
+        <!-- Add table here -->
+        <table id="table" style="min-width: 680px; margin: 2rem">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Read</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
 </html>
+
